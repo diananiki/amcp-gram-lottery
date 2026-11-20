@@ -1,0 +1,29 @@
+{
+  "name": "amcp-gram-lottery",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node --import tsx scripts/build.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "wallet": "node --import tsx scripts/wallet.ts",
+    "deploy": "node --import tsx scripts/deploy.ts",
+    "lottery": "node --import tsx scripts/lottery.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@ton/core": "0.63.1",
+    "@ton/crypto": "3.3.0",
+    "@ton/tolk-js": "1.5.0",
+    "@ton/ton": "16.3.0",
+    "dotenv": "18.0.10"
+  },
+  "devDependencies": {
+    "@ton/sandbox": "0.45.0",
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
